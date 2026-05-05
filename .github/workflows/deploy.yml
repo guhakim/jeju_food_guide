@@ -25,6 +25,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+        env:
+          VITE_SUPABASE_URL: https://mpxxiqnaeberlcarvupr.supabase.co
+          VITE_SUPABASE_PUBLISHABLE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1weHhpcW5hZWJlcmxjYXJ2dXByIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1MTYyMTIsImV4cCI6MjA5MzA5MjIxMn0.QkNRdCPZaO6wAL7DKHdHIMRuy3QZ0fSDZJ9JfpF0V2Y
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
