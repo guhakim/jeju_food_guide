@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { ArrowLeft, Bookmark, Leaf } from "lucide-react";
+import { ArrowLeft, Bookmark } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSafeBite } from "@/context/SafeBiteContext";
 import { useT } from "@/lib/i18n";
@@ -18,8 +18,8 @@ export const AppHeader = ({ back = false, titleKey }: { back?: boolean; titleKey
             </Button>
           ) : (
             <Link to="/" className="flex items-center gap-2">
-              <div className="rounded-xl bg-gradient-safe p-1.5">
-                <Leaf className="h-5 w-5 text-safe-foreground" />
+              <div className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#FF6B00]">
+                <span className="text-base font-black text-white leading-none">J</span>
               </div>
               <span className="text-lg font-bold tracking-tight">SafeBite Jeju</span>
             </Link>
