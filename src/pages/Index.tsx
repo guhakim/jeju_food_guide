@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Camera, ShieldCheck, Sparkles, Leaf, Bookmark, ArrowRight, Globe, Utensils } from "lucide-react";
+import { Camera, ShieldCheck, Sparkles, Bookmark, ArrowRight, Globe, Utensils } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useSafeBite } from "@/context/SafeBiteContext";
 import { LANGS, useT } from "@/lib/i18n";
@@ -15,8 +15,8 @@ const Index = () => {
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-primary/85 backdrop-blur-md">
         <div className="container flex h-14 items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-primary-foreground">
-            <div className="rounded-md bg-accent p-1.5">
-              <Leaf className="h-4 w-4 text-accent-foreground" />
+            <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[#F07830]">
+              <span className="text-sm font-black text-white leading-none">J</span>
             </div>
             <span className="text-base font-bold tracking-tight">SafeBite Jeju</span>
           </Link>
